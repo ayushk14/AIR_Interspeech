@@ -32,8 +32,8 @@ dict_dr=~/kaldi/egs/$recipe_name/s5/data/local/dict
 
 mkdir -p $data_dir $dict_dir
 
-cp -a Recipe_Files/uttids/train.uttids ~/kaldi/egs/$recipe_name/s5/$data_dir/train.uttids
-cp -a Recipe_Files/uttids/test.uttids ~/kaldi/egs/$recipe_name/s5/$data_dir/test.uttids
-cp -a Recipe_Files/uttids/dev.uttids ~/kaldi/egs/$recipe_name/s5/$data_dir/dev.uttids
+cp -a Recipe_Files/uttids/train.uttids ~/kaldi/egs/$recipe_name/s5/data/local/data/train.uttids
+cp -a Recipe_Files/uttids/test.uttids ~/kaldi/egs/$recipe_name/s5/data/local/data/test.uttids
+cp -a Recipe_Files/uttids/dev.uttids ~/kaldi/egs/$recipe_name/s5/data/local/data/dev.uttids
 
 echo "New recipe - $recipe_name created successfully with all appropriate files replaced!!!"
