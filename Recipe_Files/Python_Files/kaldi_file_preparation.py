@@ -259,6 +259,7 @@ for x in split_cat:
             if i not in phones_list:
                 phones_list.append(i)
 
+phones_list = list(filter(lambda a: a != '', phones_list))
 phones_list.append('sil')
 phones_list.sort()
 
