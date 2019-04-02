@@ -33,9 +33,6 @@ for x in split_cat:
     temp_list = []
     temp_list_phoneme = []
     for item in ref_file_content:
-        #prefix = item[0]
-        #file_name = item[2:8]
-        #folder_name = item[9:]
         prefix = item[-1]
         file_name = item[:6]
         folder_name = item[7:-2]
@@ -73,26 +70,7 @@ for x in split_cat:
 
         temp_str = ' '.join(temp_str.split())
         temp_str_phoneme = ' '.join(temp_str_phoneme.split())
-        '''
-        temp_str = temp_str.replace("32 ","")
-        temp_str = temp_str.replace(" 32","")
-        temp_str = temp_str.replace("32","")
-        temp_str_phoneme = temp_str_phoneme.replace("32 ","")
-        temp_str_phoneme = temp_str_phoneme.replace(" 32","")
-        temp_str_phoneme = temp_str_phoneme.replace("32","")
 
-        temp_str = temp_str.replace("34 ","")
-        temp_str = temp_str.replace(" 34","")
-        temp_str = temp_str.replace("34","")
-        temp_str_phoneme = temp_str_phoneme.replace("34 ","")
-        temp_str_phoneme = temp_str_phoneme.replace(" 34","")
-        temp_str_phoneme = temp_str_phoneme.replace("34","")
-
-        temp_str = temp_str.replace("IE","I E")
-        temp_str = temp_str.replace("IPA","I PA")
-        temp_str_phoneme = temp_str_phoneme.replace("IE","I E")
-        temp_str_phoneme = temp_str_phoneme.replace("IPA","I PA")
-        '''
         temp_list.append(temp_str)
         temp_list_phoneme.append(temp_str_phoneme)
 
@@ -121,7 +99,6 @@ for x in split_cat:
 
     temp_list = []
     for item in ref_file_content:
-        #spk = item[2:4]
         spk = item[:2]
         temp_str = item+' '+spk
         temp_list.append(temp_str)
@@ -185,9 +162,6 @@ for x in split_cat:
 
     temp_list = []
     for item in ref_file_content:
-        #prefix = item[0]
-        #file_name = item[2:8]
-        #folder_name = item[9:]
         prefix = item[-1]
         file_name = item[:6]
         folder_name = item[7:-2]
@@ -217,9 +191,6 @@ for x in split_cat:
 
     temp_list = []
     for item in ref_file_content:
-        #prefix = item[0]
-        #file_name = item[2:8]
-        #folder_name = item[9:]
         prefix = item[-1]
         file_name = item[:6]
         folder_name = item[7:-2]
