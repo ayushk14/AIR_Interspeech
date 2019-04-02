@@ -243,12 +243,12 @@ for x in split_cat:
 phones_list.append('sil')
 phones_list.sort()
 
-file = open(Recipe_dir+'/'+dict_files+'/'+lexicon.txt,'w')
+file = open(Recipe_dir+'/'+dict_files+'/'+'lexicon.txt','w')
 for item in phones_list:
     file.write(item+' '+item+'\n')
 file.close()
 
-file = open(Recipe_dir+'/'+dict_files+'/'+phones.txt,'w')
+file = open(Recipe_dir+'/'+dict_files+'/'+'phones.txt','w')
 for item in phones_list:
     file.write(item+'\n')
 file.close()
