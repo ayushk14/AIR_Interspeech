@@ -33,9 +33,12 @@ for x in split_cat:
     temp_list = []
     temp_list_phoneme = []
     for item in ref_file_content:
-        prefix = item[0]
-        file_name = item[2:8]
-        folder_name = item[9:]
+        #prefix = item[0]
+        #file_name = item[2:8]
+        #folder_name = item[9:]
+        prefix = item[-1]
+        file_name = item[:6]
+        folder_name = item[7:-2]
 
         if prefix == 'C':
             type_of_data = 'clean'
@@ -109,7 +112,8 @@ for x in split_cat:
 
     temp_list = []
     for item in ref_file_content:
-        spk = item[2:4]
+        #spk = item[2:4]
+        spk = item[:2]
         temp_str = item+' '+spk
         temp_list.append(temp_str)
     temp_list.sort()
@@ -172,9 +176,12 @@ for x in split_cat:
 
     temp_list = []
     for item in ref_file_content:
-        prefix = item[0]
-        file_name = item[2:8]
-        folder_name = item[9:]
+        #prefix = item[0]
+        #file_name = item[2:8]
+        #folder_name = item[9:]
+        prefix = item[-1]
+        file_name = item[:6]
+        folder_name = item[7:-2]
 
         if prefix == 'C' or prefix == 'N':
             type_of_data = 'seed'
@@ -201,9 +208,12 @@ for x in split_cat:
 
     temp_list = []
     for item in ref_file_content:
-        prefix = item[0]
-        file_name = item[2:8]
-        folder_name = item[9:]
+        #prefix = item[0]
+        #file_name = item[2:8]
+        #folder_name = item[9:]
+        prefix = item[-1]
+        file_name = item[:6]
+        folder_name = item[7:-2]
 
         if prefix == 'C' or prefix == 'N':
             type_of_data = 'seed'
