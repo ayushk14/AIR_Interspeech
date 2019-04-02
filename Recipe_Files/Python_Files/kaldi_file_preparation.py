@@ -54,7 +54,16 @@ for x in split_cat:
         temp_str = item+' '
         temp_str_phoneme = item+';'
         for line in s_f_content:
-            #filetered_line = removeSpecialCharacters(line)
+            line = line.replace("32 ","")
+            line = line.replace(" 32 ","")
+            line = line.replace("32","")
+
+            line = line.replace("34 ","")
+            line = line.replace(" 34","")
+            line = line.replace("34","")
+
+            line = line.replace("IE","I E")
+            line = line.replace("IPA","I PA")
             if line != s_f_content[-1]:
                 temp_str = temp_str + line + ' '
                 temp_str_phoneme = temp_str_phoneme + line + ' '
@@ -64,7 +73,7 @@ for x in split_cat:
 
         temp_str = ' '.join(temp_str.split())
         temp_str_phoneme = ' '.join(temp_str_phoneme.split())
-
+        '''
         temp_str = temp_str.replace("32 ","")
         temp_str = temp_str.replace(" 32","")
         temp_str = temp_str.replace("32","")
@@ -83,7 +92,7 @@ for x in split_cat:
         temp_str = temp_str.replace("IPA","I PA")
         temp_str_phoneme = temp_str_phoneme.replace("IE","I E")
         temp_str_phoneme = temp_str_phoneme.replace("IPA","I PA")
-
+        '''
         temp_list.append(temp_str)
         temp_list_phoneme.append(temp_str_phoneme)
 
